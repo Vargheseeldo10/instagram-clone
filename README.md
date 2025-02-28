@@ -39,17 +39,19 @@ A code editor (VS Code recommended)
 ### 📥 Installation & Setup
 
 1️⃣ Clone the Repository
-
+```
 git clone https://github.com/Vargheseeldo10/Social-Media-Dashboard.git
+```
+```
 cd Social-Media-Dashboard
-
+```
 2️⃣ Open the Project
 
 Simply open the index.html file in a browser:
-
+```
 start index.html  # For Windows
 open index.html   # For macOS
-
+```
 
 ---
 
