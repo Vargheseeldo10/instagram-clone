@@ -4,124 +4,409 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media Dashboard</title>
-
-    <!-- Stylesheets -->
+    <title>Instagram Clone</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-    
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 <body>
-    
     <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="#" class="logo">
-            <img src="img/logo.png" alt="Logo">
-        </a>
-        
-        <!-- Profile Section -->
-        <div class="profile">
-            <div class="profile-img">
-                <img src="img/profile.jpg" alt="Profile Picture">
+    <aside class="sidebar">
+        <div class="sidebar-container">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="Instagram">
+            </a>
+            
+            <!-- Profile Information -->
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="img/profile.jpg" alt="Profile picture">
+                </div>
+                <div class="profile-info">
+                    <div class="name">
+                        <h1>Varghese Eldo</h1>
+                        <img src="img/verify.png" alt="Verified badge">
+                    </div>
+                    <span class="username">@v_eldo</span>
+                </div>
             </div>
-            <div class="name">
-                <h1>Varghese Eldo</h1>
-                <img src="img/verify.png" alt="Verified Badge">
+            
+            <!-- Profile Stats -->
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>54</h3>
+                    <span>Posts</span>
+                </div>
+                <div class="stat-box">
+                    <h3>2.4k</h3>
+                    <span>Followers</span>
+                </div>
+                <div class="stat-box">
+                    <h3>1300</h3>
+                    <span>Following</span>
+                </div>
             </div>
-            <span>@v_eldo</span>
+            
+            <!-- Navigation Menu -->
+            <nav class="menu">
+                <a href="#" class="active">
+                    <span class="icon">
+                        <i class="ri-home-5-line"></i>
+                    </span>
+                    Home
+                </a>
+                <a href="#">
+                    <span class="icon">
+                        <i class="ri-search-line"></i>
+                    </span>
+                    Search
+                </a>
+                <a href="#">
+                    <span class="icon">
+                        <i class="ri-compass-3-line"></i>
+                    </span>
+                    Explore
+                </a>
+                <a href="#">
+                    <span class="icon">
+                        <i class="ri-vidicon-line"></i>
+                    </span>
+                    Reels
+                </a>
+                <a href="#">
+                    <span class="icon">
+                        <i class="ri-message-3-line"></i>
+                    </span>
+                    Messages
+                </a>
+                <a href="#">
+                    <span class="icon">
+                        <i class="ri-heart-line"></i>
+                    </span>
+                    Notifications
+                </a>
+                <a href="#">
+                    <span class="icon">
+                        <i class="ri-add-box-line"></i>
+                    </span>
+                    Create
+                </a>
+                <a href="#">
+                    <span class="icon profile-small">
+                        <img src="img/profile.jpg" alt="Profile">
+                    </span>
+                    Profile
+                </a>
+            </nav>
+            
+            <!-- More Menu -->
+            <div class="more-menu">
+                <a href="#">
+                    <span class="icon">
+                        <i class="ri-settings-3-line"></i>
+                    </span>
+                    Settings
+                </a>
+                <a href="#">
+                    <span class="icon">
+                        <i class="ri-bookmark-line"></i>
+                    </span>
+                    Saved
+                </a>
+                <a href="#">
+                    <span class="icon">
+                        <i class="ri-logout-box-r-line"></i>
+                    </span>
+                    Log out
+                </a>
+            </div>
         </div>
-
-        <!-- About Stats -->
-        <div class="about">
-            <div class="box">
-                <h3>54</h3>
-                <span>Posts</span>
-            </div>
-            <div class="box">
-                <h3>2.4k</h3>
-                <span>Followers</span>
-            </div>
-            <div class="box">
-                <h3>1300</h3>
-                <span>Following</span>
-            </div>
-        </div>
-
-        <!-- Navigation Menu -->
-        <nav class="menu">
-            <a href="#" class="active"><i class="ri-function-line"></i> Feed</a>
-            <a href="#"><i class="ri-notification-4-line"></i> Notifications</a>
-            <a href="#"><i class="ri-search-line"></i> Explore</a>
-            <a href="#"><i class="ri-mail-unread-fill"></i> Messages</a>
-            <a href="#"><i class="ri-send-plane-fill"></i> Direct</a>
-            <a href="#"><i class="ri-bar-chart-2-fill"></i> Stats</a>
-            <a href="#"><i class="ri-settings-3-line"></i> Settings</a>
-            <a href="#"><i class="ri-logout-box-line"></i> Log out</a>
-        </nav>
-    </div>
+    </aside>
 
     <!-- Main Content -->
-    <div class="main-home">
-        <div class="header">
-            <div class="search">
-                <i class="ri-search-line"></i>
-                <input type="text" placeholder="Search">
-            </div>
-            <div class="header-content">
-                <i class="ri-notification-4-line"></i>
-                <i class="ri-mail-unread-fill"></i>
-                <a href="#" class="btn"><i class="ri-add-circle-fill"></i> Add Photos</a>
-            </div>
-        </div>
+    <main class="main-content">
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <div class="search-container">
+                    <i class="ri-search-line"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="ri-heart-line"></i></button>
+                    <button class="icon-btn"><i class="ri-message-3-line"></i></button>
+                    <button class="icon-btn plus-btn">
+                        <i class="ri-add-line"></i>
+                    </button>
+                </div>
+            </header>
 
-        <!-- Stories Section -->
-        <div class="stories">
-            <h2>Stories</h2>
-            <div class="story-container">
-                <div class="story"><img src="img/profile.jpg" alt="User Story"></div>
-                <div class="story"><img src="img/profile1.jpg" alt="User Story"></div>
-                <div class="story"><img src="img/profile2.jpg" alt="User Story"></div>
-                <div class="story"><img src="img/profile3.jpg" alt="User Story"></div>
-            </div>
-        </div>
-
-        <!-- Feed -->
-        <div class="feed">
-            <h2>Feed</h2>
-            <div class="feed-posts">
-                <div class="post">
-                    <img src="img/post1.jpg" alt="Post Image">
-                    <div class="post-info">
-                        <div class="user">
-                            <img src="img/profile9.jpg" alt="User">
-                            <span>Messi</span>
+            <!-- Stories Section -->
+            <section class="stories-section">
+                <div class="stories-header">
+                    <h2>Stories</h2>
+                    <button class="watch-all-btn">
+                        <i class="ri-play-circle-line"></i>
+                        <span>Watch all</span>
+                    </button>
+                </div>
+                
+                <div class="stories-container">
+                    <!-- Your Story -->
+                    <div class="story your-story">
+                        <div class="story-avatar">
+                            <img src="img/profile.jpg" alt="Your story">
+                            <div class="add-story">+</div>
                         </div>
-                        <div class="actions">
-                            <i class="ri-heart-line"></i> <span>84.4k</span>
-                            <i class="ri-chat-3-line"></i> <span>88</span>
+                        <span class="story-username">Your Story</span>
+                    </div>
+                    
+                    <!-- Other Stories -->
+                    <div class="story">
+                        <div class="story-avatar has-story">
+                            <img src="img/profile1.jpg" alt="User story">
                         </div>
+                        <span class="story-username">user_one</span>
+                    </div>
+                    
+                    <div class="story">
+                        <div class="story-avatar has-story">
+                            <img src="img/profile2.jpg" alt="User story">
+                        </div>
+                        <span class="story-username">travel_24</span>
+                    </div>
+                    
+                    <div class="story">
+                        <div class="story-avatar has-story">
+                            <img src="img/profile3.jpg" alt="User story">
+                        </div>
+                        <span class="story-username">photo_pro</span>
+                    </div>
+                    
+                    <div class="story">
+                        <div class="story-avatar has-story">
+                            <img src="img/profile4.jpg" alt="User story">
+                        </div>
+                        <span class="story-username">art_lover</span>
+                    </div>
+                    
+                    <div class="story">
+                        <div class="story-avatar has-story">
+                            <img src="img/profile5.jpg" alt="User story">
+                        </div>
+                        <span class="story-username">nature_22</span>
+                    </div>
+                    
+                    <div class="story">
+                        <div class="story-avatar has-story">
+                            <img src="img/profile6.jpg" alt="User story">
+                        </div>
+                        <span class="story-username">food_pics</span>
+                    </div>
+                    
+                    <div class="story">
+                        <div class="story-avatar has-story">
+                            <img src="img/profile7.jpg" alt="User story">
+                        </div>
+                        <span class="story-username">tech_geek</span>
                     </div>
                 </div>
+            </section>
 
-                <div class="post">
-                    <img src="img/post2.jpg" alt="Post Image">
-                    <div class="post-info">
-                        <div class="user">
-                            <img src="img/profile8.jpg" alt="User">
-                            <span>Desperados</span>
-                        </div>
-                        <div class="actions">
-                            <i class="ri-heart-line"></i> <span>84.4k</span>
-                            <i class="ri-chat-3-line"></i> <span>88</span>
-                        </div>
+            <!-- Feed Section -->
+            <section class="feed-section">
+                <div class="feed-header">
+                    <h2>Feed</h2>
+                    <div class="feed-filter">
+                        <button class="filter-btn active">Latest</button>
+                        <button class="filter-btn">Popular</button>
                     </div>
                 </div>
                 
-            </div>
+                <!-- Posts Grid -->
+                <div class="posts-container">
+                    <!-- Post 1 -->
+                    <article class="post">
+                        <div class="post-header">
+                            <div class="post-user">
+                                <div class="post-user-avatar">
+                                    <img src="img/profile9.jpg" alt="User">
+                                </div>
+                                <div class="post-user-details">
+                                    <h3 class="post-username">Messi</h3>
+                                    <span class="post-location">Paris, France</span>
+                                </div>
+                            </div>
+                            <button class="post-options">
+                                <i class="ri-more-fill"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="post-image">
+                            <img src="img/post1.jpg" alt="Post image">
+                        </div>
+                        
+                        <div class="post-actions">
+                            <div class="post-actions-left">
+                                <button class="post-action-btn">
+                                    <i class="ri-heart-line"></i>
+                                </button>
+                                <button class="post-action-btn">
+                                    <i class="ri-chat-3-line"></i>
+                                </button>
+                                <button class="post-action-btn">
+                                    <i class="ri-send-plane-line"></i>
+                                </button>
+                            </div>
+                            <button class="post-action-btn">
+                                <i class="ri-bookmark-line"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="post-info">
+                            <div class="post-likes">
+                                <span>84.4k likes</span>
+                            </div>
+                            <div class="post-caption">
+                                <span class="post-username">Messi</span>
+                                <span class="caption-text">Beautiful day at the practice field! #football #practice</span>
+                            </div>
+                            <div class="post-comments">
+                                <span class="view-comments">View all 88 comments</span>
+                            </div>
+                            <span class="post-time">2 HOURS AGO</span>
+                        </div>
+                    </article>
+                    
+                    <!-- Post 2 -->
+                    <article class="post">
+                        <div class="post-header">
+                            <div class="post-user">
+                                <div class="post-user-avatar">
+                                    <img src="img/profile8.jpg" alt="User">
+                                </div>
+                                <div class="post-user-details">
+                                    <h3 class="post-username">Desperados</h3>
+                                    <span class="post-location">Mexico City</span>
+                                </div>
+                            </div>
+                            <button class="post-options">
+                                <i class="ri-more-fill"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="post-image">
+                            <img src="img/post2.jpg" alt="Post image">
+                        </div>
+                        
+                        <div class="post-actions">
+                            <div class="post-actions-left">
+                                <button class="post-action-btn">
+                                    <i class="ri-heart-line"></i>
+                                </button>
+                                <button class="post-action-btn">
+                                    <i class="ri-chat-3-line"></i>
+                                </button>
+                                <button class="post-action-btn">
+                                    <i class="ri-send-plane-line"></i>
+                                </button>
+                            </div>
+                            <button class="post-action-btn">
+                                <i class="ri-bookmark-line"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="post-info">
+                            <div class="post-likes">
+                                <span>76.2k likes</span>
+                            </div>
+                            <div class="post-caption">
+                                <span class="post-username">Desperados</span>
+                                <span class="caption-text">Weekend vibes 🌮 #foodie #weekend</span>
+                            </div>
+                            <div class="post-comments">
+                                <span class="view-comments">View all 102 comments</span>
+                            </div>
+                            <span class="post-time">5 HOURS AGO</span>
+                        </div>
+                    </article>
+                    
+                    <!-- Post 3 -->
+                    <article class="post">
+                        <div class="post-header">
+                            <div class="post-user">
+                                <div class="post-user-avatar">
+                                    <img src="img/profile10.jpg" alt="User">
+                                </div>
+                                <div class="post-user-details">
+                                    <h3 class="post-username">Gallery3</h3>
+                                    <span class="post-location">New York, NY</span>
+                                </div>
+                            </div>
+                            <button class="post-options">
+                                <i class="ri-more-fill"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="post-image">
+                            <img src="img/post3.jpg" alt="Post image">
+                        </div>
+                        
+                        <div class="post-actions">
+                            <div class="post-actions-left">
+                                <button class="post-action-btn">
+                                    <i class="ri-heart-line"></i>
+                                </button>
+                                <button class="post-action-btn">
+                                    <i class="ri-chat-3-line"></i>
+                                </button>
+                                <button class="post-action-btn">
+                                    <i class="ri-send-plane-line"></i>
+                                </button>
+                            </div>
+                            <button class="post-action-btn">
+                                <i class="ri-bookmark-line"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="post-info">
+                            <div class="post-likes">
+                                <span>52.8k likes</span>
+                            </div>
+                            <div class="post-caption">
+                                <span class="post-username">Gallery3</span>
+                                <span class="caption-text">New exhibition opening this weekend! #art #gallery</span>
+                            </div>
+                            <div class="post-comments">
+                                <span class="view-comments">View all 65 comments</span>
+                            </div>
+                            <span class="post-time">8 HOURS AGO</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </div>
-    </div>
-
+    </main>
+    
+    <!-- Mobile Bottom Navigation (Only appears on small screens) -->
+    <nav class="mobile-nav">
+        <a href="#" class="mobile-nav-item active">
+            <i class="ri-home-5-fill"></i>
+        </a>
+        <a href="#" class="mobile-nav-item">
+            <i class="ri-search-line"></i>
+        </a>
+        <a href="#" class="mobile-nav-item">
+            <i class="ri-add-box-line"></i>
+        </a>
+        <a href="#" class="mobile-nav-item">
+            <i class="ri-heart-line"></i>
+        </a>
+        <a href="#" class="mobile-nav-item">
+            <img src="img/profile.jpg" alt="Profile">
+        </a>
+    </nav>
+    
+    <!-- Optional: JS Script for Interactions -->
+    <script src="script.js"></script>
 </body>
 </html>
